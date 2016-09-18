@@ -1,20 +1,42 @@
 <ion-header>
   <ion-navbar>
     <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="chatboxes"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>8enlinea</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>app/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content class="cards-bg">
+  
+  <div class="message-container">
+    <div class="chat-bubble left">
+      ¡Hola!
+    </div>
+  </div>
+
+  <div class="message-container">
+    <div class="chat-bubble left">
+      ¿Podrías decirme tu nombre?
+    </div>
+  </div>
+
+  <div class="message-container">
+    <div class="chat-bubble right">
+        Hola
+    </div>
+  </div>
+
+  <div class="message-container">
+    <div class="chat-bubble right">
+      Mi nombre es...
+      <button block (click)="doPrompt()">Responder</button>
+    </div>
+  </div>
+
+  <div class="message-container">
+    <div class="chat-bubble left">
+      <ion-spinner name="dots"></ion-spinner>
+    </div>
+  </div>
 </ion-content>
